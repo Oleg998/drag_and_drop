@@ -1,0 +1,36 @@
+.hero-section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px;
+    border: 1px solid #212121;
+    max-width: 300px;
+  }
+  
+  .form-button {
+    align-self: flex-start;
+  }
+  
+  .form-input {
+    padding: 4px;
+    color: #212121;
+    border: 1px solid #212121;
+    border-radius: 4px;
+  }
+  .form-label {
+      display:flex;
+      flex-direction :column;
+  }
+  .result {
+    margin: 26px;
+  }
+  .letter {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 46px;
+    font-weight: 600;
+  }

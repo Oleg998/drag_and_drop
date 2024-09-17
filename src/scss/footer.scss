@@ -1,0 +1,49 @@
+.footer-conteiner {
+    background-color: $_bg_color;
+    padding: 16px;
+
+}
+
+.foo-list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 46px;
+    max-width: 288px;
+}
+
+.foo-item {
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.foo-item a:hover {
+    text-decoration: underline;
+}
+
+.center-text {
+    text-align: center
+}
+
+@include media(desktop) {
+    .footer-conteiner {
+        padding-bottom: 52px;
+        padding-top: 52px;
+    }
+
+    .foo-list {
+        flex-wrap: nowrap;
+        max-width: 1055px;
+        justify-content: space-between;
+    }
+
+    .foo-item:nth-child(3) {
+        order: -1
+    }
+
+    .foo-item:nth-child(1) {
+        order: -1
+    }
+}
