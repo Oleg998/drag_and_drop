@@ -1,6 +1,9 @@
-footer {
-   
-    
+footer {     
+    height: 100px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 100px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -38,13 +41,10 @@ footer {
 }
 
 @include media(desktop) {
-    .footer-conteiner {
-        padding-top: 50px;
-        padding-bottom: 50px;
+  
        
     
-    }
-
+  
     .foo-list {
         flex-wrap: nowrap;
         max-width: 1055px;
