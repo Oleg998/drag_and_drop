@@ -53,6 +53,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/bubble-coco'
+    base: '/drag_and_drop'
   };
 });
