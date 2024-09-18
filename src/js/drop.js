@@ -66,6 +66,7 @@ function drop(e) {
     } else if (targetElement.classList.contains('draggable') || targetElement.classList.contains('selected')) {
       targetElement.parentNode.insertBefore(draggableElement, targetElement);
     }
+    draggableElement.classList.remove('selected');
   });
 }
 
