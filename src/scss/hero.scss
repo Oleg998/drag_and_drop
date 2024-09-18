@@ -1,59 +1,92 @@
 .hero-section {
-    padding-top: 36px;
-    padding-bottom: 360px;
+  padding-top: 36px;
+  padding-bottom: 360px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 8px;
-    border: 1px solid #212121;
-    max-width: 300px;
-  }
-  
-  .form-button {
-    align-self: flex-start;
-  }
-  
-  .form-input {
-    padding: 4px;
-    color: #212121;
-    border: 1px solid #212121;
-    border-radius: 4px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.form-input {
+  height: auto;
+  min-height: 40px; /* Минимальная высота для удобства ввода текста */
+  padding: 4px;
+  color: #212121;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box; /* Включает padding и border в ширину элемента */
+  overflow: hidden; /* Скрывает прокрутку, если текст выходит за пределы */
+}
+
+.form-button {
+  align-self: flex-start;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.textContainer {
+  margin-top: 26px;
+  position: relative;
+  padding: 26px;
+  border: dashed rgb(0, 76, 255);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.letter {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 46px;
+  font-weight: 600;
+  margin: 1px;
+  padding: 1px;
+}
+
+.selection-rectangle {
+  position: absolute;
+  border: 2px dashed blue;
+  background-color: rgba(173, 216, 230, 0.3);
+}
+
+.letter.selected {
+  color: red;
+}
+
+span.letter {
+  white-space: pre;
+}
+
+@media (max-width: 768px) {
   .form-label {
-      display:flex;
-      flex-direction :column;
-  }
-  .textContainer {
-    margin-top: 26px;
-    position: relative;
-    padding: 26px;
-    border: dashed rgb(0, 76, 255);
-    width: 100%;
-  }
-  .letter {
-    display: inline-block;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 46px;
-    font-weight: 600;
-    margin: 1px;
-    padding: 1px;
-    
+    font-size: 0.9rem;
   }
 
-  .selection-rectangle {
-    position: absolute;
-    border: 2px dashed blue;
-    background-color: rgba(173, 216, 230, 0.3);
-    
+  .form-input, .form-button {
+    font-size: 0.9rem;
   }
-
-  .letter.selected {
-    color: red;
-  }
-
-  span.letter {
-    white-space: pre;
-  }
+}
