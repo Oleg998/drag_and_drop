@@ -1,6 +1,6 @@
 .hero-section {
     padding-top: 36px;
-    padding-bottom: 36px;
+    padding-bottom: 360px;
 }
 
 .form {
@@ -26,11 +26,30 @@
       display:flex;
       flex-direction :column;
   }
-  .result {
-    margin: 26px;
+  .textContainer {
+    margin-top: 26px;
+    position: relative;
+    padding: 26px;
+    border: dashed rgb(0, 76, 255);
+    width: 100%;
   }
   .letter {
+    display: inline-block;
     font-family:'Courier New', Courier, monospace;
     font-size: 46px;
     font-weight: 600;
+    margin: 1px;
+    padding: 1px;
+    
+  }
+
+  .selection-rectangle {
+    position: absolute;
+    border: 2px dashed blue;
+    background-color: rgba(173, 216, 230, 0.3);
+    
+  }
+
+  .letter.selected {
+    color: red;
   }
