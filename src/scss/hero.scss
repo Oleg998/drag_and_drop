@@ -24,14 +24,14 @@
 
 .form-input {
   height: auto;
-  min-height: 40px; /* Минимальная высота для удобства ввода текста */
+  min-height: 40px; 
   padding: 4px;
   color: #212121;
   border: 1px solid #212121;
   border-radius: 4px;
   width: 100%;
-  box-sizing: border-box; /* Включает padding и border в ширину элемента */
-  overflow: hidden; /* Скрывает прокрутку, если текст выходит за пределы */
+  box-sizing: border-box; 
+  overflow:scroll; 
 }
 
 .form-button {
