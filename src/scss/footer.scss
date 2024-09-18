@@ -1,3 +1,13 @@
+footer {
+   
+    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
 .footer-conteiner {
     background-color: $_bg_color;
     padding: 16px;
@@ -28,10 +38,7 @@
 }
 
 @include media(desktop) {
-    .footer-conteiner {
-        padding-bottom: 52px;
-        padding-top: 52px;
-    }
+   
 
     .foo-list {
         flex-wrap: nowrap;
@@ -39,11 +46,4 @@
         justify-content: space-between;
     }
 
-    .foo-item:nth-child(3) {
-        order: -1
-    }
-
-    .foo-item:nth-child(1) {
-        order: -1
-    }
 }
